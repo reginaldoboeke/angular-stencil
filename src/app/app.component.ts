@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-stencil';
+  test = 50;
+
+  subtitle = 'This is a list of the people';
+  people = [
+    { name: 'Reginaldo', age: 26 },
+  ];
+
+  anyMethod(event: any) {
+    console.log({ event });
+  }
 }
